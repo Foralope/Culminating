@@ -25,7 +25,7 @@ public class Culminating {
         healthLoss = healthLoss + 5;
         //Checking to see if player 1 won or not, then dealing damage and possibly healing according to the boosters in play
         if (winner == 1){
-            if (booster != 2 && booster != 1) {
+            if (booster != 2 || booster != 1) {
                 health[1] = health[1] - healthLoss;
                 System.out.println("Damage dealt: "+healthLoss);
             } else if (booster == 1){
